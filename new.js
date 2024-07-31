@@ -1,4 +1,4 @@
-const fetchSportsData = async (apiUrl, containerId) => {
+const fetchSportsDataEvent = async (apiUrl, containerId) => {
     let matchesFound = false;
     const response = await fetch(apiUrl);
     const data = await response.json();
@@ -127,35 +127,7 @@ const fetchSportsData = async (apiUrl, containerId) => {
 };
 
 // Example usage for multiple leagues
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=624', 'cafleague');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=7', 'premierleague');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=103', 'nba');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6064', 'rio');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=366', 'nhl');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=11', 'laliga');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=35', 'ligue1');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=102', 'Libertadores');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=25', 'budesliga');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=17', 'seriaA');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=572', 'championsleague');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=573', 'europaleague');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=13', 'delray');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=104', 'mls');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=649', 'saudi');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=8', 'facup');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=141', 'ligamx');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=623', 'afc');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=438', 'mlb');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=275', 'rolandgarroswomen');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=209', 'rolandgarrosmen');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=215', 'wimbledonmen');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=230', 'usopenmen');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=183', 'australianopenmen');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=106', 'wnba');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=216', 'stuttgart');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=7842', 'valencia');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=213', 'hertogenbosch');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=240', 'madridopen');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6316', 'euro2024');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=595', 'copa-america');
-fetchSportsData('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=7244', 'nba-summer-leauge');
+fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=7710', 'olympics');
+fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=8111', 'olympics-men');
+fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6794', 'olympics-doubles');
+

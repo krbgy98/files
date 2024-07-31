@@ -130,4 +130,5 @@ const fetchSportsDataEvent = async (apiUrl, containerId) => {
 fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=7710', 'olympics');
 fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=8111', 'olympics-men');
 fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6794', 'olympics-doubles');
-
+fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6395', 'olympics-hand-men');
+fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6394', 'olympics-basket-men');

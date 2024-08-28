@@ -41,9 +41,9 @@ function createEventHtml(homeTeam, awayTeam, leagueAbbreviation, match_URL, home
         <span class="score-ft">${status === 'live' || status === 'pre' ? '' : 'FT'}</span> 
       </div>
       <div class="team">
-         <span class="team-name">${awayTeam.team.displayName}</span>
+         
         <img class="team-logo" src="${awayTeamLogo}" alt="${awayTeam.team.displayName} Logo">
-       
+       <span class="team-name">${awayTeam.team.displayName}</span>
       </div>
     </div>
   `;
@@ -767,8 +767,9 @@ const fetchSportsData = async (apiUrl, containerId) => {
                : `<span class="score-text">${homeTeamScore} : ${awayTeamScore}</span><span class="score-ft">FT</span>`}
             </div>
             <div class="team">
-              <span class="team-name">${awayTeam}</span>
+              
               <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v4/Competitors/${ALogo}" alt="${awayTeam} Logo">
+              <span class="team-name">${awayTeam}</span>
             </div>
           </div>
         `;

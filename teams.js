@@ -16,7 +16,7 @@ async function getTeamMatches(url, containerId) {
     container.innerHTML = ''; // Clear the container before adding today's fixtures
 
     for (const match of matches) {
-        if (match.statusText !== "Ended" && match.statusText !== "Postponed") {
+        if (match.statusText !== "Ended" && match.statusText !== "Postponed" && match.statusText !== "Final") {
             const gameDate = new Date(match.startTime);
             const estTimeStr = gameDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             const leagueName = match.competitionDisplayName;

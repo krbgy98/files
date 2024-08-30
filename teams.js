@@ -1,5 +1,5 @@
 const GeorgiaTech = `https://webws.365scores.com/web/games/current/?appTypeId=5&competitors=6641`;
-
+const michigan = `https://webws.365scores.com/web/games/current/?appTypeId=5&competitors=6598`;
 async function fetchDataTeams(url) {
     const response = await fetch(url);
     return response.json();
@@ -80,3 +80,4 @@ async function getTeamMatches(url, containerId) {
 }
 
 getTeamMatches(GeorgiaTech, 'GeorgiaTech');
+getTeamMatches(michigan, 'michigan');

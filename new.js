@@ -132,3 +132,4 @@ fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5
 fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6794', 'olympics-doubles');
 fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6395', 'olympics-hand-men');
 fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=6394', 'olympics-basket-men');
+fetchSportsDataEvent('https://webws.365scores.com/web/games/current/?appTypeId=5&competitions=382', 'ncaaf');
